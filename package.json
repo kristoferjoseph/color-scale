@@ -19,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/kristoferjoseph/color-scale/issues"
   },
-  "homepage": "https://github.com/kristoferjoseph/color-scale#readme"
+  "homepage": "https://github.com/kristoferjoseph/color-scale#readme",
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "mocha": "^2.2.5"
+  },
+  "dependencies": {
+    "color": "^0.8.0"
+  }
 }
