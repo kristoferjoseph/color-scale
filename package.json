@@ -1,0 +1,23 @@
+{
+  "name": "color-scale",
+  "version": "1.0.0",
+  "description": "Module for generating a color scale based off of a color and a variance.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kristoferjoseph/color-scale.git"
+  },
+  "keywords": [
+    "color",
+    "scale"
+  ],
+  "author": "@dam",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/kristoferjoseph/color-scale/issues"
+  },
+  "homepage": "https://github.com/kristoferjoseph/color-scale#readme"
+}
