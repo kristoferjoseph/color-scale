@@ -21,7 +21,6 @@ module.exports = function(opts) {
       colorArray[1] = decrement(colorArray[1], adjustment);
     }
 
-    console.log('colorArray', colorArray);
     return Color().hwb(colorArray).hexString();
   };
 };
