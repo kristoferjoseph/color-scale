@@ -10,18 +10,19 @@ module.exports = function(opts) {
     step = step || 0;
     //multiply step by variance.
     var adjustment = variance * Math.abs(step);
+    var resultArray = colorArray.slice();
 
     if (step > 0) {
       //If positive incement white and decrement black
-      colorArray[1] = increment(colorArray[1], adjustment);
-      colorArray[2] = decrement(colorArray[2], adjustment);
+      resultArray[1] = increment(resultArray[1], adjustment);
+      resultArray[2] = decrement(resultArray[2], adjustment);
     } else {
       //If negative increment black and decrement white
-      colorArray[2] = increment(colorArray[2], adjustment);
-      colorArray[1] = decrement(colorArray[1], adjustment);
+      resultArray[2] = increment(resultArray[2], adjustment);
+      resultArray[1] = decrement(resultArray[1], adjustment);
     }
 
-    return Color().hwb(colorArray).hexString();
+    return Color().hwb(resultArray).hexString();
   };
 };
 

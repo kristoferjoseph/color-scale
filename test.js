@@ -22,6 +22,25 @@ describe('color-scale', function() {
     expect(cs(-1)).to.equal('#0000CC');
   });
 
+  it('should generate correct color scale', function() {
+    var cs = colorScale({
+      color: '#FF0080',
+      variance: 20
+    });
+
+    expect(cs(5)).to.equal('#FFFFFF');
+    expect(cs(4)).to.equal('#FFCCE6');
+    expect(cs(3)).to.equal('#FF99CC');
+    expect(cs(2)).to.equal('#FF66B3');
+    expect(cs(1)).to.equal('#FF3399');
+    expect(cs(0)).to.equal('#FF0080');
+    expect(cs(-1)).to.equal('#CC0066');
+    expect(cs(-2)).to.equal('#99004D');
+    expect(cs(-3)).to.equal('#660033');
+    expect(cs(-4)).to.equal('#330019');
+    expect(cs(-5)).to.equal('#000000');
+  });
+
   describe('incrementColor', function() {
     it('should not exceed 100', function() {
      expect(colorScale.increment(100, 1)).to.equal(100);
