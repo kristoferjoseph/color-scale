@@ -48,7 +48,7 @@ describe('color-scale', function() {
   });
 
   describe('decrementColor', function() {
-    it('should not exceed 100', function() {
+    it('should not go below 0', function() {
      expect(colorScale.decrement(0, 1)).to.equal(0);
     });
   });
